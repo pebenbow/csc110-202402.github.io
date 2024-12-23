@@ -4,13 +4,15 @@ title: "FAQ"
 
 ## How do I export my assignment PDF from RStudio to upload to Gradescope?
 
-Go to your *Files* tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select *Export*... If you have selected multiple files to export, RStudio will zip them up into a single zip file for you.
+Go to your *Files* tab, check the box next to the file you want to download, then click on the blue gear icon on the Files tab to reveal the drop down menu, and select *Export*...
+If you have selected multiple files to export, RStudio will zip them up into a single zip file for you.
 If you've selected just a single file, it will only download that.
 The downloaded file will go to wherever files you download off the internet goes on your computer (usually your Downloads folder).
 
-```{=html}
-<iframe width="700" height="394" src="https://www.youtube.com/embed/cAHCMpPJx3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-```
+<iframe width="700" height="394" src="https://www.youtube.com/embed/cAHCMpPJx3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
 ## How can I submit my assignment to Gradescope?
 
 The instructions for submitting your assignment to Gradescope can be found [here](https://help.gradescope.com/article/ccbpppziu9-student-submit-work#submitting_a_pdf).
@@ -18,13 +20,15 @@ In a nutshell, you'll upload your PDF and them mark the page(s) where each quest
 It's OK if a question spans multiple pages, just mark them all.
 It's also OK if a page includes multiple questions.
 
-```{=html}
-<iframe width="700" height="394" src="https://www.youtube.com/embed/u-pK4GzpId0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-```
-## Can I use a local install of R and RStudio instead of using the RStudio containers?
+<iframe width="700" height="394" src="https://www.youtube.com/embed/u-pK4GzpId0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 
-The short answer is, I'd rather you didn't, to save yourself some headache.
-But, the long answer is, sure!
+</iframe>
+
+## Can I install R and RStudio locally instead of using JupyterHub?
+
+I would prefer you use JupyterHub for this course because it has numerous advantages over a local installation of these applications.
+However,
+
 But you will need to install a specific versions of R and RStudio for everything to work as expected.
 You will also need to install the R packages we're using as well as have Git installed on your computer.
 These are not extremely challenging things to get right, but they are not trivial either, particularly on certain operating systems.
@@ -41,3 +45,8 @@ If you want to take this path, here is what you need to do:
 And I'd like to reiterate again that successful installation of these software is **not** a learning goal of this course.
 So if any of this seems tedious or intimidating in any way, just use the computing environment we have set up for you.
 More on that [here](/computing-access.html).
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/pete-benbow/csc-110-office-hours', text: 'Schedule office hours', color: '#d42121', textColor: '#ffffff' }); }</script>

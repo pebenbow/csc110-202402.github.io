@@ -35,3 +35,8 @@ title: "Useful links"
 |                              |                                                                                                                                                        |
 |                              | 🔗 readxl: [readxl.tidyverse.org](https://readxl.tidyverse.org/)                                                                                       |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/pete-benbow/csc-110-office-hours', text: 'Schedule office hours', color: '#000000', textColor: '#ffffff' }); }</script>

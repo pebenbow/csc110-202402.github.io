@@ -1,11 +1,12 @@
 ---
-title: "STA 199: Introduction to Data Science"
-subtitle: "Section 1 - Dr. Mine Çetinkaya-Rundel"
+title: "CSC 110: Data Science & Society"
+subtitle: "Spring 2025"
 execute:
   freeze: false
 ---
 
 This page contains an outline of the topics, content, and assignments for the semester.
+
 Note that this schedule will be updated as the semester progresses and the timeline of topics and assignments might be updated throughout the semester.
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -13,15 +14,14 @@ library(googlesheets4)
 library(gt)
 library(tidyverse)
 gs4_deauth()
-d <- read_sheet("https://docs.google.com/spreadsheets/d/1GCwNNWDK0yJPBraWtfZ-tmtXJsgvkLhYTCVtk6c_6js/edit?usp=sharing", sheet = "sec1-mine")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/13CvB0DEuuKvst--9pZ_7oNwB06qPAiwa07bEUxarf7g/edit?usp=sharing", sheet = "Sheet1")
 ```
 
 ::: column-screen-right
 ```{r, echo = FALSE}
 d |>
   mutate(
-    date = as.Date(date),
-    week = ifelse(is.na(week), "", week)
+    date = as.Date(date)
   ) |>
   gt() |>
   text_transform(cells_body(columns = c(prepare)),
@@ -34,11 +34,11 @@ d |>
   text_transform(cells_body(columns = c(slides)),
     fn = function(x) {
       ifelse(is.na(x), fontawesome::fa("laptop", fill_opacity = 0.1),
-        glue::glue("<a href = {x}>{fontawesome::fa('laptop')}</a>")
+        glue::glue("<a href = {x}>{fontawesome::fa('display')}</a>")
       )
     }
   ) |>
-  text_transform(cells_body(columns = c(ae)),
+  text_transform(cells_body(columns = c(ex)),
     fn = function(x) {
       ifelse(is.na(x), fontawesome::fa("users", fill_opacity = 0.1),
         glue::glue("<a href = {x}>{fontawesome::fa('users')}</a>")
@@ -95,14 +95,14 @@ d |>
     }
   ) |>
   fmt_date(date, date_style = 30) |>
-  sub_missing(columns = c(date, what, topic, notes), missing_text = "") |>
+  sub_missing(columns = c(date, topic, notes), missing_text = "") |>
   cols_align(
     align = "center", 
-    columns = c(week, dow, prepare, slides, ae, ae_sa, hw, hw_sa, lab, lab_sa, exam, project)
+    columns = c(prepare, slides, ex, ae_sa, hw, hw_sa, lab, lab_sa, exam, project)
     ) |>
   cols_align(
     align = "left", 
-    columns = c(date, what, topic, notes)
+    columns = c(day, date, topic, notes)
     ) |>
   tab_style(
     style = cell_borders(
@@ -111,8 +111,19 @@ d |>
       style = "solid"
     ),
     locations = cells_body(
-      columns = c(date, topic, prepare, ae_sa, hw_sa, lab_sa, exam, project)
+      columns = c(date, day, topic, prepare, ae_sa, hw_sa, lab_sa, exam, project)
     )
-  )
+  ) |>
+  tab_style(
+    style = cell_fill(color = "white"),
+    locations = cells_body(
+      rows = topic %in% c("Spring Break", "Fall Break")
+    )
+)
 ```
 :::
+
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/pete-benbow/csc-110-office-hours', text: 'Schedule office hours', color: '#d42121', textColor: '#ffffff' }); }</script>

@@ -9,7 +9,7 @@ $light: #525252;
 
 // Navigation element colors
 $footer-bg: #181818;
-$navbar-bg: #303030;
+$navbar-bg: #ffffff;
 $sidebar-bg: #303030;
 
 // Code blocks
@@ -23,6 +23,10 @@ $input-bg: #242424;
 
 
 /*-- scss:rules --*/
+
+.sidebar-logo{
+    content: url("images/davidson-wordmark-lockup-on black.png");
+}
 
 .render-commit-push {
   padding: 0.5em 0.5em 0em 3em;

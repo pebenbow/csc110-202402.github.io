@@ -7,66 +7,54 @@ project:
 
 website:
   page-navigation: true
-  title: "STA 199"
-  description: "Homepage for STA 199 - Introduction to Data Science at Duke University, Fall 2022, Section 1."
+  title: "CSC 110"
+  description: "Homepage for CSC 110 - Data Science & Society at Davidson College, Spring 2025"
   site-url: "https://sta199-f22-1.github.io/"
 
-  repo-url: https://github.com/sta199-f22-1/sta199-f22-1.github.io/
-  repo-actions: [edit, issue]
+  repo-url: https://github.com/pebenbow/csc110-202402.github.io
+  repo-actions: [issue]
 
   open-graph: true
-  twitter-card:
-    creator: "@minebocek"
-    image: "images/twitter-card.png"
 
   sidebar:
-    background: "#325b74" # Pantone Midnight - Fall 2022
-    logo: "images/logo.png"
+    background: "#d42121"
+    logo: "images/davidson-wordmark-lockup-on red.png"
+    logo-alt: "Davidson College wordmark"
     pinned: true
+    title: "CSC 110"
     align: center
+
     tools:
       - icon: github
         href: https://github.com/sta199-f22-1/sta199-f22-1.github.io
         text: "GitHub organization"
-      - icon: code-square
-        href: https://cmgr.oit.duke.edu/containers
-        text: "RStudio Containers"
-      - icon: person-fill
-        text: "Sakai"
-        menu:
-          - text: Gradescope
-            url: https://sakai.duke.edu/portal/site/d55dc1df-28e1-4637-be6f-6ba7c848fabf/page/e6e5b35b-ae85-4d98-8c56-ec6c559db637
-          - text: Gradebook
-            url: https://sakai.duke.edu/portal/site/d55dc1df-28e1-4637-be6f-6ba7c848fabf/tool/1d0ca2ac-6304-46b2-a6ac-de5a93f677b2/
 
     style: docked
     search: true
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - section: "Course information"
         contents:
-          - href: course-overview.qmd
-            text: Overview
-          - href: course-syllabus.qmd
-            text: Syllabus
-          - href: course-support.qmd
-            text: Support
-          - href: course-team.qmd
-            text: Teaching team
           - href: index.qmd
             text: Schedule
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-team.qmd
+            text: Instructional team
+          - href: course-support.qmd
+            text: Support
           - href: course-links.qmd
             text: Useful links
           - href: course-faq.qmd
             text: FAQ
-      - section: "Computing"
+      - section: "Resources"
         contents:
-          - href: computing-access.qmd
-            text: Access
-          - href: computing-troubleshooting.qmd
-            text: Troubleshooting
-          - href: computing-cheatsheets.qmd
-            text: Cheatsheets
+          - href: https://csc110.jupyter.davidson.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpebenbow%2FCSC110-202401&urlpath=rstudio%2F&branch=main
+            text: JupyterHub
+          - href: https://www.gradescope.com/courses/815355
+            text: Gradescope
+          - href: https://r4ds.hadley.nz/
+            text: R4DS
       - section: "Project"
         contents:
           - href: project-description.qmd
@@ -75,16 +63,16 @@ website:
             text: Tips + resources
 
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2022, Mine Çetinkaya-Rundel"
-    background: "#325b74" # Pantone Midnight - Fall 2022
+    left: "Course website adapted from STA-199 at Duke University"
+    right: "This page is built with [Quarto](https://quarto.org/)"
+    background: "#000000"
 
 format:
   html:
     theme:
       light: [cosmo, style/sta199.scss]
       dark: [cosmo, style/sta199.scss, style/dark.scss]
-    linkcolor: "#325b74" # Pantone Midnight - Fall 2022
+    linkcolor: "#d42121"
     toc: true
     code-copy: true
     code-overflow: wrap

@@ -2,21 +2,13 @@
 title: "Course overview"
 ---
 
-Intro to data science and statistical thinking.
-Learn to explore, visualize, and analyze data to understand natural phenomena, investigate patterns, model outcomes, and make predictions, and do so in a reproducible and shareable manner.
-Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization, and effective communication of results.
-Work on problems and case studies inspired by and based on real-world questions and data.
-The course will focus on the R statistical computing language.
-No statistical or computing background is necessary.
-Not open to students who have taken a 100-level Statistical Science course, Statistical Science 210, or a Statistical Science course numbered 300 or above.
+This class is an introduction to data science explored through the lens of contemporary economic and social justice issues.
+You will learn to manipulate, visualize, and analyze data for the purpose of understanding societal phenomena and patterns that impact the lives of people in the United States, particularly those coming from historically marginalized groups.
+You will also learn to effectively communicate data science topics by researching, writing, and presenting on real-world problems, using data throughout the process to support your findings.
+
+This courses uses the R statistical programming language to teach key data science tasks like wrangling, visualization, and exploratory data analysis.
+No prior experience with statistics or programming is necessary for this course, and it has no prerequisites in the Davidson College course catalog.
 
 ## Class meetings
 
-| Meeting | Location                       | Time                        |
-|---------|--------------------------------|-----------------------------|
-| Lecture | French Science 2231            | Tue & Thur 10:15 - 11:30 am |
-| Lab 01  | Perkins Link 087 (Classroom 3) | Mon 10:15 - 11:30 am        |
-| Lab 02  | Perkins Link 087 (Classroom 3) | Mon 1:45 - 3:00 pm          |
-| Lab 03  | Perkins Link 087 (Classroom 3) | Mon 3:30 - 4:45 pm          |
-| Lab 04  | Perkins Link 087 (Classroom 3) | Mon 5:15 - 6:30 pm          |
-| Lab 05  | Perkins Link 087 (Classroom 3) | Mon 12:00 - 1:15 pm         |
+This class meets every Tuesday and Thursday from 08:15 to 09:30 in Watson 132.
